@@ -1,6 +1,6 @@
 """Translator Test Script."""
 import unittest
-from translator import english_to_french, french_to_english
+from translator import english_to_french,french_to_english
 
 class TestEnglishToFrench(unittest.TestCase):
     """
@@ -23,3 +23,5 @@ class TestFrenchToEnglish(unittest.TestCase):
         """
         self.assertNotEqual(french_to_english("Bonjour"),None)
         self.assertEqual(french_to_english("Bonjour"),'Hello')
+
+unittest.main()
